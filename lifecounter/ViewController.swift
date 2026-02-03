@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var p1Label: UILabel!
     @IBOutlet weak var p2Label: UILabel!
     @IBOutlet weak var loserLabel: UILabel!
+    @IBOutlet weak var p1Input: UITextField!
+    @IBOutlet weak var p2Input: UITextField!
     
     var p1Life = 20
     var p2Life = 20
@@ -30,6 +32,39 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func p1CustomAdd(_ sender: Any) {
+        let text = p1Input.text ?? ""
+        if let value = Int(text) {
+            p1Life += value
+            updateUI()
+        }
+    }
+    
+    
+    @IBAction func p1CustomSubtract(_ sender: Any) {
+        let text = p1Input.text ?? ""
+        if let value = Int(text) {
+            p1Life -= value
+            updateUI()
+        }
+    }
+    
+    @IBAction func p2CustomAdd(_ sender: Any) {
+        let text = p2Input.text ?? ""
+        if let value = Int(text) {
+            p2Life += value
+            updateUI()
+        }
+    }
+    
+    @IBAction func p2CustomSubtract(_ sender: Any) {
+        let text = p2Input.text ?? ""
+        if let value = Int(text) {
+            p2Life -= value
+            updateUI()
+        }
+    }
+    
     @IBAction func p1AddOne(_ sender: Any) {
         p1Life += 1
         updateUI()
@@ -39,16 +74,7 @@ class ViewController: UIViewController {
         p1Life -= 1
         updateUI()
     }
-    
-    @IBAction func p1AddFive(_ sender: Any) {
-        p1Life += 5
-        updateUI()
-    }
-    
-    @IBAction func p1MinusFive(_ sender: Any) {
-        p1Life -= 5
-        updateUI()
-    }
+
     
     @IBAction func p2AddOne(_ sender: Any) {
         p2Life += 1
@@ -60,20 +86,17 @@ class ViewController: UIViewController {
         updateUI()
     }
     
-    @IBAction func p2AddFive(_ sender: Any) {
-        p2Life += 5
-        updateUI()
-    }
-    
-    @IBAction func p2MinusFive(_ sender: Any) {
-        p2Life -= 5
-        updateUI()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loserLabel.isHidden = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 
 
