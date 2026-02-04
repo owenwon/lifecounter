@@ -13,15 +13,6 @@
             continueAfterRunningActions = "No"
             symbolName = "*0x104db0b68">
             <Locations>
-               <Location
-                  uuid = "A2557140-5316-409A-823D-DE3502176C11 - 61db3fdf2d7c9f81"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mach_msg2_trap"
-                  moduleName = "libsystem_kernel.dylib"
-                  usesParentBreakpointCondition = "Yes">
-               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
