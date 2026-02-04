@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var p1Input: UITextField!
     @IBOutlet weak var p2Input: UITextField!
     
+    var history: [String] = []
     var p1Life = 20
     var p2Life = 20
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
     @IBAction func p1CustomAdd(_ sender: Any) {
         let text = p1Input.text ?? ""
         if let value = Int(text) {
+            history.append("Player 1 gained \(value) life")
             p1Life += value
             updateUI()
         }
@@ -44,6 +46,7 @@ class ViewController: UIViewController {
     @IBAction func p1CustomSubtract(_ sender: Any) {
         let text = p1Input.text ?? ""
         if let value = Int(text) {
+            history.append("Player 1 lost \(value) life")
             p1Life -= value
             updateUI()
         }
@@ -52,6 +55,7 @@ class ViewController: UIViewController {
     @IBAction func p2CustomAdd(_ sender: Any) {
         let text = p2Input.text ?? ""
         if let value = Int(text) {
+            history.append("Player 2 gained \(value) life")
             p2Life += value
             updateUI()
         }
@@ -60,6 +64,7 @@ class ViewController: UIViewController {
     @IBAction func p2CustomSubtract(_ sender: Any) {
         let text = p2Input.text ?? ""
         if let value = Int(text) {
+            history.append("Player 2 lost \(value) life")
             p2Life -= value
             updateUI()
         }
@@ -67,22 +72,26 @@ class ViewController: UIViewController {
     
     @IBAction func p1AddOne(_ sender: Any) {
         p1Life += 1
+        history.append("Player 1 gained 1 life")
         updateUI()
     }
     
     @IBAction func p1MinusOne(_ sender: Any) {
         p1Life -= 1
+        history.append("Player 1 lost 1 life")
         updateUI()
     }
 
     
     @IBAction func p2AddOne(_ sender: Any) {
         p2Life += 1
+        history.append("Player 2 gained 1 life")
         updateUI()
     }
     
     @IBAction func p2MinusOne(_ sender: Any) {
         p2Life -= 1
+        history.append("Player 2 lost 1 life")
         updateUI()
     }
     
@@ -97,6 +106,14 @@ class ViewController: UIViewController {
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if let destination = segue.destination as? HistoryViewController {
+            
+            destination.historyLog = history
+        }
     }
 
 

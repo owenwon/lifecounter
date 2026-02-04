@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JtB-qh-9tR">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y0F-JV-N9F">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
                                 <subviews>
                                     <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hl9-JZ-t1n">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="306"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4h-7V-Htt">
-                                                <rect key="frame" x="95.666666666666686" y="119" width="202" height="95"/>
+                                                <rect key="frame" x="95.666666666666686" y="105.66666666666669" width="202" height="95"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EP-JX-hXD">
                                                         <rect key="frame" x="71.666666666666671" y="0.0" width="58.666666666666671" height="20.333333333333332"/>
@@ -38,7 +38,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-XW-UtD">
-                                                        <rect key="frame" x="0.0" y="60.666666666666686" width="202" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="60.666666666666629" width="202" height="34.333333333333343"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyk-1f-ftU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="34.333333333333336"/>
@@ -98,10 +98,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auF-Y4-446">
-                                        <rect key="frame" x="0.0" y="333" width="393" height="333"/>
+                                        <rect key="frame" x="0.0" y="306" width="393" height="306"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-5W-JA7">
-                                                <rect key="frame" x="94.666666666666686" y="119" width="204" height="95"/>
+                                                <rect key="frame" x="94.666666666666686" y="105.66666666666663" width="204" height="95"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff4-Fi-LUu">
                                                         <rect key="frame" x="71.333333333333329" y="0.0" width="60.999999999999986" height="20.333333333333332"/>
@@ -116,7 +116,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-Ef-EW2">
-                                                        <rect key="frame" x="0.0" y="60.666666666666629" width="204" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="60.666666666666742" width="204" height="34.333333333333343"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8f-Xo-dDm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="34.333333333333336"/>
@@ -188,6 +188,13 @@
                             <constraint firstItem="Y0F-JV-N9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pvd-ju-jbM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="81m-u3-Dl4">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="DZB-zp-dt4">
+                            <connections>
+                                <segue destination="6Aj-gC-8RE" kind="show" id="gxT-zl-E4s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="loserLabel" destination="Me5-4J-6Kl" id="iqP-na-LKe"/>
                         <outlet property="p1Input" destination="9Lr-FU-TyN" id="z3B-dN-5xr"/>
@@ -198,10 +205,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="111"/>
+            <point key="canvasLocation" x="898.47328244274809" y="110.56338028169014"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="zeH-Ef-giU">
+            <objects>
+                <viewController id="6Aj-gC-8RE" customClass="HistoryViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KqW-BJ-ZD0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N85-7n-cyr">
+                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d1B-W4-3O0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d1B-W4-3O0" firstAttribute="bottom" secondItem="N85-7n-cyr" secondAttribute="bottom" id="8Rb-M2-87C"/>
+                            <constraint firstItem="N85-7n-cyr" firstAttribute="top" secondItem="d1B-W4-3O0" secondAttribute="top" id="9xd-qd-SSp"/>
+                            <constraint firstItem="N85-7n-cyr" firstAttribute="leading" secondItem="d1B-W4-3O0" secondAttribute="leading" id="bKi-qi-4Di"/>
+                            <constraint firstItem="d1B-W4-3O0" firstAttribute="trailing" secondItem="N85-7n-cyr" secondAttribute="trailing" id="xDf-ch-Chf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NgU-cO-aSn"/>
+                    <connections>
+                        <outlet property="historyTextView" destination="N85-7n-cyr" id="Hxa-rm-GBg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRK-Nv-Dwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="111"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jW5-C5-zwF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JtB-qh-9tR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wDi-uF-QDc">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UbX-hZ-tDy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9H-31-em6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.244274809160306" y="110.56338028169014"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

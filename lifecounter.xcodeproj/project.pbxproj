@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AEE64372F32CE8300352CDC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE64362F32CE8300352CDC /* HistoryViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5AA09CF72F2C6CE500FAC981 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		5AA09CE02F2C6CE400FAC981 /* lifecounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09CF62F2C6CE500FAC981 /* lifecounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA09D002F2C6CE500FAC981 /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEE64362F32CE8300352CDC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +93,7 @@
 		5AA09CD72F2C6CE400FAC981 = {
 			isa = PBXGroup;
 			children = (
+				5AEE64362F32CE8300352CDC /* HistoryViewController.swift */,
 				5AA09CE22F2C6CE400FAC981 /* lifecounter */,
 				5AA09CF92F2C6CE500FAC981 /* lifecounterTests */,
 				5AA09D032F2C6CE500FAC981 /* lifecounterUITests */,
@@ -249,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEE64372F32CE8300352CDC /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
